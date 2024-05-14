@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JKTV22-FXStore.jnlp">
+  <information>
+    <title>JKTV22-FXStore</title>
+    <vendor>pupil</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JKTV22-FXStore.jar" size="37758" download="eager" />
+    <jar href="lib\eclipselink.jar" size="8478776" download="eager" />
+    <jar href="lib\imgscalr-lib-4.2.jar" size="226824" download="eager" />
+    <jar href="lib\javafx-swt.jar" size="36882" download="eager" />
+    <jar href="lib\javafx.base.jar" size="754168" download="eager" />
+    <jar href="lib\javafx.controls.jar" size="2585104" download="eager" />
+    <jar href="lib\javafx.fxml.jar" size="130175" download="eager" />
+    <jar href="lib\javafx.graphics.jar" size="4281185" download="eager" />
+    <jar href="lib\javafx.media.jar" size="277257" download="eager" />
+    <jar href="lib\javafx.swing.jar" size="89704" download="eager" />
+    <jar href="lib\javafx.web.jar" size="727735" download="eager" />
+    <jar href="lib\javax.persistence_2.1.0.v201304241213.jar" size="164637" download="eager" />
+    <jar href="lib\mysql-connector-j-8.1.0.jar" size="2485905" download="eager" />
+    <jar href="lib\org.eclipse.persistence.jpa.jpql_2.5.2.v20140319-9ad6abd.jar" size="1366247" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="JKTV22-FXStore" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="jktv22.fxstore.JKTV22FXStore"  name="JKTV22-FXStore" />
+  <update check="always"/>
+</jnlp>

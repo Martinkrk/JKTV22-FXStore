@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vbHomeRoot" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" spacing="5.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jktv22.fxstore.HomeController">
+   <children>
+      <MenuBar fx:id="mbMenu">
+        <menus>
+          <Menu mnemonicParsing="false" text="Products">
+            <items>
+              <MenuItem fx:id="mi_getProducts" mnemonicParsing="false" onAction="#getProducts" text="List" />
+              <MenuItem fx:id="mi_newProduct" mnemonicParsing="false" onAction="#newProduct" text="New" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Users">
+            <items>
+              <MenuItem fx:id="miGetUsers" mnemonicParsing="false" onAction="#getUsers" text="List" />
+              <MenuItem fx:id="miNewUser" mnemonicParsing="false" onAction="#addNewUser" text="New" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Authenticate">
+            <items>
+              <MenuItem fx:id="miLogin" mnemonicParsing="false" onAction="#login" text="Login" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="lbInfo">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <VBox fx:id="vb_content" alignment="TOP_CENTER" spacing="10.0">
+         <children>
+            <Label fx:id="l_info" text="" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</VBox>
