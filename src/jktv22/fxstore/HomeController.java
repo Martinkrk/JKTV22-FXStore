@@ -10,7 +10,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javax.persistence.EntityManager;
 import products.listproduct.ListProductController;
@@ -56,8 +55,28 @@ public class HomeController implements Initializable {
         }
     }
     
+    @FXML public void logout() {
+        this.menuItem=null;
+        jktv22.fxstore.JKTV22FXStore.user = null;
+        vb_content.getChildren().clear();
+        l_info.setText("You signed out!");
+        login();
+    }
+    
     @FXML
     private void addNewUser(){
+        if(jktv22.fxstore.JKTV22FXStore.user == null){
+            getLbInfo().getStyleClass().clear();
+            getLbInfo().getStyleClass().add("infoError");
+            getLbInfo().setText("Login into the system."); 
+            return;
+        }
+        if(!jktv22.fxstore.JKTV22FXStore.user.getRoles().contains(jktv22.fxstore.JKTV22FXStore.ROLES.ADMINISTRATOR.toString())){
+            getLbInfo().getStyleClass().clear();
+            getLbInfo().getStyleClass().add("infoError");
+            getLbInfo().setText("Permission denied."); 
+            return;
+        }
          try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/users/newuser/newuser.fxml"));
@@ -139,10 +158,5 @@ public class HomeController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         vb_content.setPrefSize(Double.MAX_VALUE, Double.MAX_VALUE);
-//        if(jktv22.fxstore.JKTV22FXStore.currentUser == null){
-//            lbInfoUser.setText("Авторизуйтесь!");
-//        }else{
-//            lbInfoUser.setText("Управление программой от имени пользователя: "+jptv22fxlibrary.JPTV22FXLibrary.currentUser.getLogin());
-//        }
     }    
 }

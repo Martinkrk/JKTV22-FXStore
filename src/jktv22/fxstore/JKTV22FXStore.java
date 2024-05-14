@@ -30,6 +30,7 @@ public class JKTV22FXStore extends Application {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("JKTV22FXStorePU");
         this.em = emf.createEntityManager();
         checkSuperUser();
+        createRegularUser();
     }
     
     private void checkSuperUser() {
@@ -44,6 +45,25 @@ public class JKTV22FXStore extends Application {
                 admin.getRoles().add(ROLES.CUSTOMER.toString());
                 getEntityManager().getTransaction().begin();
                 getEntityManager().persist(admin);
+                getEntityManager().getTransaction().commit();
+            } catch (NoSuchAlgorithmException ex) {
+                Logger.getLogger(JKTV22FXStore.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (InvalidKeySpecException ex) {
+                Logger.getLogger(JKTV22FXStore.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
+    
+    private void createRegularUser() {
+        if ((getEntityManager().createQuery("SELECT u FROM User u").getResultList().size()<2)) {
+            try {
+                User user = new User();
+                user.setLogin("user");
+                PassEncrypt pe = new PassEncrypt();
+                user.setPassword(pe.getEncryptPassword("123", pe.getSalt()));
+                user.getRoles().add(ROLES.CUSTOMER.toString());
+                getEntityManager().getTransaction().begin();
+                getEntityManager().persist(user);
                 getEntityManager().getTransaction().commit();
             } catch (NoSuchAlgorithmException ex) {
                 Logger.getLogger(JKTV22FXStore.class.getName()).log(Level.SEVERE, null, ex);

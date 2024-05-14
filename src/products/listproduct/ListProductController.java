@@ -122,6 +122,7 @@ public class ListProductController implements Initializable {
             modalWindow.close();
             return;
         }
+        purchase.setUser(jktv22.fxstore.JKTV22FXStore.user);
         
         product.setStock(product.getStock()-1);
         

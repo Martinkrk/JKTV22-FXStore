@@ -3,16 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/jktv22/fxstore/home.fxml</file>
-            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/products/product/ProductController.java</file>
             <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/entities/Purchase.java</file>
-            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/products/listproduct/ListProductController.java</file>
-            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/jktv22/fxstore/JKTV22FXStore.java</file>
-            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/products/product/product.fxml</file>
-            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/products/newproduct/NewProductController.java</file>
-            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/products/listproduct/listproduct.fxml</file>
-            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/entities/Product.java</file>
             <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/jktv22/fxstore/HomeController.java</file>
+            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/products/newproduct/NewProductController.java</file>
+            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/products/listproduct/ListProductController.java</file>
+            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/jktv22/fxstore/home.fxml</file>
+            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/users/newuser/NewUserController.java</file>
+            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/products/product/ProductController.java</file>
+            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/jktv22/fxstore/JKTV22FXStore.java</file>
+            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/products/listproduct/listproduct.fxml</file>
+            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/products/product/product.fxml</file>
+            <file>file:/C:/Users/pupil/Documents/NetBeansProjects/JKTV22/JKTV22-FXStore/src/users/newuser/newuser.fxml</file>
         </group>
     </open-files>
 </project-private>

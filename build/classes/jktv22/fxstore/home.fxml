@@ -27,6 +27,7 @@
           <Menu mnemonicParsing="false" text="Authenticate">
             <items>
               <MenuItem fx:id="miLogin" mnemonicParsing="false" onAction="#login" text="Login" />
+              <MenuItem fx:id="miLogout" mnemonicParsing="false" onAction="#logout" text="Logout" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
@@ -45,6 +46,14 @@
          </font></Label>
       <VBox fx:id="vb_content" alignment="TOP_CENTER" spacing="10.0">
          <children>
+             <Label fx:id="infoError" text="" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Label>
             <Label fx:id="l_info" text="" textAlignment="CENTER">
                <font>
                   <Font size="24.0" />

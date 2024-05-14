@@ -28,7 +28,7 @@ public class NewUserController implements Initializable {
         if(tfLogin.getText().isEmpty() || tfPassword.getText().isEmpty()){
             homeController.getLbInfo().getStyleClass().clear();
             homeController.getLbInfo().getStyleClass().add("infoError");
-            homeController.getLbInfo().setText("Заполните все поля формы");
+            homeController.getLbInfo().setText("Fill in all input fields");
             return;
         }
         User user = new User();
@@ -48,13 +48,13 @@ public class NewUserController implements Initializable {
             homeController.getApp().getEntityManager().getTransaction().commit();
             homeController.getLbInfo().getStyleClass().clear();
             homeController.getLbInfo().getStyleClass().add("info");
-            homeController.getLbInfo().setText("Пользователь успешно добавлен");
+            homeController.getLbInfo().setText("User is successfully added");
             tfLogin.setText("");
             tfPassword.setText("");
         } catch (Exception e) {
             homeController.getLbInfo().getStyleClass().clear();
             homeController.getLbInfo().getStyleClass().add("infoError");
-            homeController.getLbInfo().setText("Добавить пользователя не удалось");
+            homeController.getLbInfo().setText("Error while creating an user");
         }
     }
     @Override
