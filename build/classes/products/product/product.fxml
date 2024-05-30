@@ -19,37 +19,37 @@
             </Label>
             <HBox spacing="2.0">
                <children>
-                  <Label text="" />
+                  <Label text="Category: " />
                   <Label fx:id="lbCategory" wrapText="true" />
                </children>
             </HBox>
             <HBox spacing="2.0">
                <children>
-                  <Label text="" />
+                  <Label text="Description: " />
                   <Label fx:id="lbDescription" wrapText="true" />
                </children>
             </HBox>
             <HBox spacing="2.0">
                <children>
-                  <Label text="" />
+                  <Label text="Manufacturer: " />
                   <Label fx:id="lbManufacturer" wrapText="true" />
                </children>
             </HBox>
             <HBox spacing="2.0">
                <children>
-                  <Label text="" />
+                  <Label text="Price: " />
                   <Label fx:id="lbPrice" wrapText="true" />
                </children>
             </HBox>
             <HBox spacing="2.0">
                <children>
-                  <Label text="" />
+                  <Label text="In stock: " />
                   <Label fx:id="lbStock" wrapText="true" />
                </children>
             </HBox>
             <HBox spacing="2.0">
                <children>
-                  <Label text="" />
+                  <Label text="Rating: " />
                   <Label fx:id="lbRating" wrapText="true" />
                </children>
             </HBox>

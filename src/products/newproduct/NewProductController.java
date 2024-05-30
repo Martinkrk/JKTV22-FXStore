@@ -94,6 +94,12 @@ public class NewProductController implements Initializable {
         b_SelectImage.disableProperty().set(false);
         selectedFile = null;
         tf_Name.setText("");
+        tf_Category.setText("");
+        tf_Description.setText("");
+        tf_Price.setText("");
+        tf_Stock.setText("");
+        tf_Rating.setText("");
+        tf_Manufacturer.setText("");
         b_SelectImage.setText("Choose product image");
     }
     

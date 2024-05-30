@@ -111,6 +111,18 @@ public class HomeController implements Initializable {
     }
     
     @FXML void newProduct() {
+        if(jktv22.fxstore.JKTV22FXStore.user == null){
+            getLbInfo().getStyleClass().clear();
+            getLbInfo().getStyleClass().add("infoError");
+            getLbInfo().setText("Login into the system."); 
+            return;
+        }
+        if(!jktv22.fxstore.JKTV22FXStore.user.getRoles().contains(jktv22.fxstore.JKTV22FXStore.ROLES.ADMINISTRATOR.toString())){
+            getLbInfo().getStyleClass().clear();
+            getLbInfo().getStyleClass().add("infoError");
+            getLbInfo().setText("Permission denied."); 
+            return;
+        }
         setMenuItem(mi_newProduct);
         l_info.setText("");
         try {
@@ -125,10 +137,6 @@ public class HomeController implements Initializable {
         } catch (IOException ex) {
             Logger.getLogger(ListProductController.class.getName()).log(Level.SEVERE, "Couldn't load the file", ex);
         }
-    }
-    
-    @FXML void newPurchase() {
-        
     }
     
     void setApp(JKTV22FXStore app) {
